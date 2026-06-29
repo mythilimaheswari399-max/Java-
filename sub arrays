@@ -1,0 +1,19 @@
+public class Main{
+	public static void main(String[] args) {
+	    int count=0;
+		int [] arr ={23, 77, 66, 99, 55, 33};
+		for(int start =0 ;start <arr.length;start++){
+		    for(int end = start ; end<arr.length;end++){
+		        int sum =0;
+		        count++;
+		        for(int i = start ; i<= end;i++){
+		            sum+=arr[i];
+		            System.out.print(arr[i]+" ");
+		        }
+		        System.out.println("Sum : "+sum);
+		        System.out.println();
+		    }
+		}
+		System.out.println("Total sub Arrays:"+count);
+	}
+}
