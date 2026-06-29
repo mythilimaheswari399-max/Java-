@@ -1,0 +1,23 @@
+//second largest
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int [] a = new int[7];
+        int largest = Integer.MIN_VALUE;
+        int second = Integer.MIN_VALUE;
+        for(int i=0;i< a.length;i++){
+            a[i]=s.nextInt();
+        }
+        for(int num:a){
+            if (num > largest){
+                second = largest;
+                largest = num;
+            }
+            else if(num>second && num != largest){
+                second = num;
+            }
+        }
+        System.out.println("Second largest :"+second);
+    }
+}
