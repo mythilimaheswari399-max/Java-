@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+  public static void main (String[] args) {
+    Stack <Integer> stack=new Stack<>();
+    stack.push(33);
+    stack.push(52);
+    
+    stack.add(43);
+    System.out.println(stack);
+    stack.pop();
+    stack.search(33);
+    System.out.println(stack);
+  }
+}
