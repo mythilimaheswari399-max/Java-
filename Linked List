@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+  public static void main (String[] args) {
+    LinkedList <Integer> list=new LinkedList<>();
+    list.add(34);
+    list.add(5);
+    list.addFirst(10);
+    list.addLast(25);
+    list.offer(50);
+    list.add(2, 50);
+    System.out.println(list);
+    System.out.println("First Element: "+list.getFirst());
+    System.out.println("Last Element: "+list.getLast());
+    list.remove();
+    list.removeFirst();
+    list.removeLast();
+    list.pop();
+    list.poll();
+    System.out.println(list);
+  }
+}
